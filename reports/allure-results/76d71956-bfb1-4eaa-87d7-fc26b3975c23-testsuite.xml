@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622974443669' stop='1622974443771'>
+    <name>To test the "Borrowing Calculator" functionality is working as expected: The user checks his borrowing capacity</name>
+    <title>To test the "Borrowing Calculator" functionality is working as expected: The user checks his borrowing capacity</title>
+    <test-cases>
+        <test-case start='1622974443670' status='passed' stop='1622974443674'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1622974443674' status='passed' stop='1622974443716'>
+            <name>Given the user is on borrowing calculator page</name>
+            <title>Given the user is on borrowing calculator page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps>
+                <step start='1622974443679' status='undefined'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7852afd7-ec75-4ef0-b912-73437e2993db-attachment.json' type='application/json' size='88'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1622974443717' status='broken' stop='1622974443765'>
+            <name>Then the user submits the details and validates the capacity</name>
+            <title>Then the user submits the details and validates the capacity</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps>
+                <step start='1622974443725' status='broken' stop='1622974443765'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='8206bd52-957b-43c8-a5be-56a6646980c4-attachment.json' type='application/json' size='145'/>
+                    </attachments>
+                    <steps>
+                        <step start='1622974443758' status='broken' stop='1622974443765'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: submit.click is not a function</message>
+                <stack-trace>TypeError: submit.click is not a function
+                    at CalculatorPage.submitDetails (C:\Automation\WebDriverIO_Cucumber_Assignment\features\pages\/calculator.page.js:37:16)
+                    at World.&lt;anonymous> (C:\Automation\WebDriverIO_Cucumber_Assignment\features\step-definitions\/steps.js:15:20)
+                    at World.executeAsync (C:\Automation\WebDriverIO_Cucumber_Assignment\node_modules\@wdio\utils\build\shim.js:136:25)
+                    at World.testFrameworkFnWrapper (C:\Automation\WebDriverIO_Cucumber_Assignment\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622974443765' status='passed' stop='1622974443769'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

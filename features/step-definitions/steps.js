@@ -4,7 +4,7 @@ import BasePage from '../pages/base.page';
 
   Given('the user is on borrowing calculator page', function () {
     CalculatorPage.open();
-    CalculatorPage.getUrl;
+    console.log ("Page is Displayed");
   });
 
   When('the user enters the data in calculator', function () {
@@ -12,5 +12,6 @@ import BasePage from '../pages/base.page';
   });
 
   Then('the user submits the details and validates the capacity', function () {
-    CalculatorPage.submit();
+    CalculatorPage.submitDetails();
+    CalculatorPage.startOver();
   });
