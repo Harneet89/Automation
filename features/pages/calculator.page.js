@@ -8,7 +8,8 @@ import BasePage from './base.page';
 
 class CalculatorPage extends BasePage {
 
-    get applicationType () {return $('//label[@for="application_type_joint"]') }
+    get submitButton () {return $('#btnBorrowCalculater')}
+    get applicationType () {return $('//label[@for="application_type_single"]') }
     get yourIncome () {return $('//label[text()="Your income (before tax)"]/..//input') }
     get otherIncome () {return $('//label[text()="Your other income"]/..//input') }
     get livingExpenses () {return $('//label[text()="Living expenses"]/..//input') }
@@ -19,7 +20,6 @@ class CalculatorPage extends BasePage {
     get howMuchToBorrow () {return $('//button[@id="btnBorrowCalculator"]') }
 
     open() {
-      //  super.open('/')
       browser.url('https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/')
     }
 
@@ -29,8 +29,18 @@ class CalculatorPage extends BasePage {
     }
 
     enterText (){
-        var attribute = $('application_type_joint').getAttribute("value");
-        console.log(attribute)
+        this.applicationType.click();
+        this.yourIncome.setValue("80000");
+        this.otherIncome.serValue("10000");
+        this.livingExpenses.setValue("500");
+        this.currentHomeLoanRepayments.setValue("0");
+        this.otherLoanRepayments.setValue("100");
+        this.otherCommitments.setValue("0");
+        this.creditCardLimit.setValue("10000");
+    }
+
+    submit() {
+      this.submitButton.click();
     }
 }
 
