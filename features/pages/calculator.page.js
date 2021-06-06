@@ -9,7 +9,6 @@ import BasePage from './base.page';
 class CalculatorPage extends BasePage {
 
     get submitButton () {return $('#btnBorrowCalculater')}
-    get applicationType () {return $('//label[@for="application_type_single"]') }
     get yourIncome () {return $('//label[text()="Your income (before tax)"]/..//input') }
     get otherIncome () {return $('//label[text()="Your other income"]/..//input') }
     get livingExpenses () {return $('//label[text()="Living expenses"]/..//input') }
@@ -29,7 +28,6 @@ class CalculatorPage extends BasePage {
     }
 
     enterText (){
-        this.applicationType.click();
         this.yourIncome.setValue("80000");
         this.otherIncome.serValue("10000");
         this.livingExpenses.setValue("500");

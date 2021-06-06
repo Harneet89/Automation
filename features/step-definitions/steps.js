@@ -8,14 +8,9 @@ import BasePage from '../pages/base.page';
   });
 
   When('the user enters the data in calculator', function () {
-   SecurePage.enterText();
+   CalculatorPage.enterText();
   });
 
-  // Then('the user submits the details and validates the capacity', function () {
-  //   SecurePage.submitForm();
-  //   expect(SecurePage.secureAreaElement).toExist();
-  //   expect(SecurePage.secureAreaElement).toHaveTextContaining('Secure Area');
-
-  //   expect(SecurePage.messageElement).toExist();
-  //   expect(SecurePage.messageElement).toHaveTextContaining(successMessage);
-  // });
+  Then('the user submits the details and validates the capacity', function () {
+    CalculatorPage.submit();
+  });
