@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "55f0852393a0253c92294a404d3a774a",
+    "name" : "To test the login functionality in \"The Internet Herokuapp\": The one where user logs in using invalid credentials",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 3,
+      "passed" : 2,
+      "unknown" : 3,
+      "total" : 10
+    }
+  }, {
+    "uid" : "c71c77594e0e8cb0fc8b435bde3abbe3",
+    "name" : "To test the login functionality in \"The Internet Herokuapp\": The one where user logs in using valid credentials",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 2,
+      "passed" : 2,
+      "unknown" : 2,
+      "total" : 7
+    }
+  } ]
+}

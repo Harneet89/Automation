@@ -1,0 +1,103 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622959007430' stop='1622959007491'>
+    <name>To test the "Borrowing Calculator" functionality is working as expected: The user checks his borrowing capacity</name>
+    <title>To test the "Borrowing Calculator" functionality is working as expected: The user checks his borrowing capacity</title>
+    <test-cases>
+        <test-case start='1622959007431' status='passed' stop='1622959007434'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1622959007435' status='passed' stop='1622959007459'>
+            <name>Given the user is on borrowing calculator page</name>
+            <title>Given the user is on borrowing calculator page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps>
+                <step start='1622959007439' status='undefined'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1622959007442' status='undefined'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='3a66c167-3a5d-4ab5-b05e-8cae48ac66d2-attachment.json' type='application/json' size='88'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1622959007459' status='broken' stop='1622959007489'>
+            <name>When the user enters the data in calculator</name>
+            <title>When the user enters the data in calculator</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps>
+                <step start='1622959007464' status='broken' stop='1622959007489'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6d081d46-34fd-4c6f-ae88-da273188caa5-attachment.json' type='application/json' size='89'/>
+                    </attachments>
+                    <steps>
+                        <step start='1622959007486' status='broken' stop='1622959007489'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: browser.$(...).setValue is not a function</message>
+                <stack-trace>TypeError: browser.$(...).setValue is not a function
+                    at SecurePage.enterText (C:\Automation\WebDriverIO_Cucumber_Assignment\features\pages\/secure.page.js:22:71)
+                    at World.&lt;anonymous> (C:\Automation\WebDriverIO_Cucumber_Assignment\features\step-definitions\/steps.js:13:15)
+                    at World.executeAsync (C:\Automation\WebDriverIO_Cucumber_Assignment\node_modules\@wdio\utils\build\shim.js:136:25)
+                    at World.testFrameworkFnWrapper (C:\Automation\WebDriverIO_Cucumber_Assignment\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622959007489' status='passed' stop='1622959007490'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

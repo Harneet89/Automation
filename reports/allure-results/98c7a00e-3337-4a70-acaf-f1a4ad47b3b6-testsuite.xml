@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1622960298484' stop='1622960298575'>
+    <name>To test the "Borrowing Calculator" functionality is working as expected: The user checks his borrowing capacity</name>
+    <title>To test the "Borrowing Calculator" functionality is working as expected: The user checks his borrowing capacity</title>
+    <test-cases>
+        <test-case start='1622960298485' status='passed' stop='1622960298487'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1622960298487' status='passed' stop='1622960298518'>
+            <name>Given the user is on borrowing calculator page</name>
+            <title>Given the user is on borrowing calculator page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps>
+                <step start='1622960298490' status='undefined'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='ad9c834d-4163-4f68-96dc-df9b3499ae4a-attachment.json' type='application/json' size='88'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1622960298518' status='broken' stop='1622960298569'>
+            <name>When the user enters the data in calculator</name>
+            <title>When the user enters the data in calculator</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps>
+                <step start='1622960298524' status='broken' stop='1622960298569'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='4a155d82-c922-484f-bffc-6661a48ceadc-attachment.json' type='application/json' size='77'/>
+                    </attachments>
+                    <steps>
+                        <step start='1622960298558' status='broken' stop='1622960298569'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: this.applicationType.waitForExist is not a function</message>
+                <stack-trace>TypeError: this.applicationType.waitForExist is not a function
+                    at SecurePage.enterText (C:\Automation\WebDriverIO_Cucumber_Assignment\features\pages\/secure.page.js:22:26)
+                    at World.&lt;anonymous> (C:\Automation\WebDriverIO_Cucumber_Assignment\features\step-definitions\/steps.js:11:15)
+                    at World.executeAsync (C:\Automation\WebDriverIO_Cucumber_Assignment\node_modules\@wdio\utils\build\shim.js:136:25)
+                    at World.testFrameworkFnWrapper (C:\Automation\WebDriverIO_Cucumber_Assignment\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:45:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1622960298569' status='passed' stop='1622960298573'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-91.0.4472.77'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

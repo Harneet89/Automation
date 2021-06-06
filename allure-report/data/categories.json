@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: LoginPage.userNameTextBox.setValue is not a function",
+      "children" : [ {
+        "name" : "When the user enters username as \"tomsmith\" and password as \"SuperSecretPassword!\"",
+        "uid" : "5be06d0afb64e21e",
+        "parentUid" : "23144a337f7348985b3cb2e851611eec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622869660704,
+          "stop" : 1622869660760,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-91.0.4472.77" ]
+      }, {
+        "name" : "When the user enters username as \"james\" and password as \"SuperSecretPassword!\"",
+        "uid" : "d6a6a26a094a5436",
+        "parentUid" : "23144a337f7348985b3cb2e851611eec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622869660808,
+          "stop" : 1622869660822,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-91.0.4472.77" ]
+      }, {
+        "name" : "When the user enters username as \"tomsmith\" and password as \"SuperPassword!\"",
+        "uid" : "fc4e66f218a9f5df",
+        "parentUid" : "23144a337f7348985b3cb2e851611eec",
+        "status" : "broken",
+        "time" : {
+          "start" : 1622869660853,
+          "stop" : 1622869660862,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome-91.0.4472.77" ]
+      } ],
+      "uid" : "23144a337f7348985b3cb2e851611eec"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

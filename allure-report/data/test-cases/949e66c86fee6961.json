@@ -1,0 +1,82 @@
+{
+  "uid" : "949e66c86fee6961",
+  "name" : "",
+  "fullName" : "To test the login functionality in \"The Internet Herokuapp\": The one where user logs in using invalid credentials.",
+  "historyId" : "b55971efe93d08a4631cca89bf06b14d",
+  "time" : {
+    "start" : 1622869660862,
+    "stop" : 1622869660863,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "To test the login functionality in \"The Internet Herokuapp\": The one where user logs in using invalid credentials"
+  }, {
+    "name" : "testClass",
+    "value" : "To test the login functionality in \"The Internet Herokuapp\": The one where user logs in using invalid credentials"
+  }, {
+    "name" : "testMethod",
+    "value" : ""
+  }, {
+    "name" : "package",
+    "value" : "To test the login functionality in \"The Internet Herokuapp\": The one where user logs in using invalid credentials"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-91.0.4472.77"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "49199c99de3e2543",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622869660842,
+        "stop" : 1622869660843,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "653a6382e9828329",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622869660822,
+        "stop" : 1622869660824,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6a75c634868685cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622869660795,
+        "stop" : 1622869660796,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "949e66c86fee6961.json",
+  "parameterValues" : [ "chrome-91.0.4472.77" ]
+}
