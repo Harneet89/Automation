@@ -4,18 +4,14 @@ import BasePage from '../pages/base.page';
 
   Given('the user is on borrowing calculator page', function () {
     CalculatorPage.open();
-    CalculatorPage.getUrl;
+    console.log ("Page is Displayed");
   });
 
   When('the user enters the data in calculator', function () {
-   SecurePage.enterText();
+   CalculatorPage.enterText();
   });
 
-  // Then('the user submits the details and validates the capacity', function () {
-  //   SecurePage.submitForm();
-  //   expect(SecurePage.secureAreaElement).toExist();
-  //   expect(SecurePage.secureAreaElement).toHaveTextContaining('Secure Area');
-
-  //   expect(SecurePage.messageElement).toExist();
-  //   expect(SecurePage.messageElement).toHaveTextContaining(successMessage);
-  // });
+  Then('the user submits the details and validates the capacity', function () {
+    CalculatorPage.submitDetails();
+    CalculatorPage.startOver();
+  });
