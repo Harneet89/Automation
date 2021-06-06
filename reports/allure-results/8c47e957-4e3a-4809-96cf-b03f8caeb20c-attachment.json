@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": "//input[@id=application_type_single]"
-}
