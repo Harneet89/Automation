@@ -1,4 +1,0 @@
-{
-  "using": "xpath",
-  "value": ".//*[contains(@class, \"btnBorrowCalculater\") and normalize-space() = \"Work out how much I could borrow\"]"
-}
